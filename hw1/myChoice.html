@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        function fivedrinks() {
+            var textbox = document.getElementById("whichdrink");
+            var drink = textbox.value;
+
+            var container = "";
+            var refill = "";
+            if (drink == "") {
+                document.write("Please type either soda or water");
+                return;
+            }
+            else if (drink == "soda") {
+                container = " cans of ";
+                refill = " No more soda from now on!";
+            }
+            else if (drink == "water") {
+                container = " bottles of ";
+                refill = " I need to stock up water in the fridge!";
+            }
+            
+            var lyrics = "";
+            var count = 5;
+            while (count > 0) {
+                lyrics = lyrics + count + "<b>" + container + "</b>" + drink + " in the fridge <br>";
+                lyrics = lyrics + count + "<b>" + container + "</b>" + drink + "<br>";
+                lyrics = lyrics + "Take one down, pass it around,<br>";
+
+                if (count > 1) {
+                    lyrics = lyrics + (count - 1) + "<b>" + container + "</b>" + drink + " in the fridge <br>";
+                }
+                else {
+                    lyrics = lyrics + "No more " + "<b>" + container + "</b>" + drink + " in the fridge <br>";
+                    lyrics = lyrics + "<br />" + refill;
+                }
+                count = count - 1;
+            }
+            document.write(lyrics);
+            
+            var soda = "Want to Drink Soda?"
+            var water = "Want to Drink Water?"
+            
+            if (drink == "soda") {
+                document.write("<br />" + "<br />" + soda.link("soda.html"));
+            }
+            else {
+                document.write("<br />" + "<br />" + water.link("water.html"));
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="form1">
+        <label for="whatdrink">Type either soda or water:</label>
+        <br />
+        <input type="text" id="whichdrink" placeholder="soda or water" />
+        <button type="button" id="displaybutton" target="_blank" onclick="fivedrinks();">Sing</button>
+    </form>
+</body>
+</html>

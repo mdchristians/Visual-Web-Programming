@@ -1,0 +1,74 @@
+/*!
+ * Start Bootstrap - Full HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.full {
+    background: url('../img/mapbg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+}
+
+/* Footer styles
+-------------------------------------------------- */
+#topheader {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+}
+
+#worldbtn {
+  position: absolute;
+  top: 13%;
+  background: rgba(255, 255, 255, .5);
+  width: 100%;
+  z-index: 50;
+}
+
+
+
+/* Custom container CSS
+-------------------------------------------------- */
+
+.container {
+  width: auto;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footertext {
+  color: #ffffff;
+}
+.topheadertext {
+  color: #ffffff;
+  font-size: 52px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+margin-top: 07px;
+margin-bottom: 10px;
+}

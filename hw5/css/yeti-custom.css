@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.wrapper
+{
+  position: relative;
+  min-height: 100%;
+}
+
+.bmheader-bar
+{
+  height: 71px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.logo
+{
+  margin: 15px 35px 0;
+  float: left;
+}
+  
+
+.signin-button
+{
+  margin: 15px 35px 0;
+  float: right;
+}
+
+.UMD
+{
+  text-align: center;
+  padding: 10px;
+}
+
+.SCSU
+{
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.tUMD
+{
+  text-align: center;
+  padding-bottom: 20px;
+  vertical-align: center;
+}
+
+.bulldogs
+{
+  padding-top: 10px;
+}
+
+.dogs
+{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.doggys
+{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.space
+{
+  padding-top: 5px;
+}
+
+.form-control-woz {
+  display: block;
+  width: 100%;
+  height: 32px;
+  padding: 8px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #6f6f6f;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control-woz:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.form-control-woz::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+  text-align:right;
+}
+.form-control-woz:-ms-input-placeholder {
+  color: #999999;
+  text-align:right;
+}
+.form-control-woz::-webkit-input-placeholder {
+  color: #999999;
+  text-align:right;
+}

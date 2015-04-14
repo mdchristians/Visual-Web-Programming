@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>VWP HTML5 Validation Form</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/yeti-bootstrap.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/yeti-custom.css" rel="stylesheet">
+	<link href="css/intlTelInput.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		.intl-tel-input 
+		{
+			width: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="bmheader-bar">
+			<img class="logo" src="img/bmlogo.png" alt="The Bluest Moon">
+			<span class="signin-button">
+				<a class="btn btn-primary btn-sm" href="error.html">Sign in</a>
+			</span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="UMD">Create your Bluest Moon Account</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				
+				<!-- Start the Info -->
+				<div class="col-md-6 UMD">
+					<h4>One account is all you need</h4>
+					<p>A single username and password gets you into everything Bluest Moon.</p>
+					<div class="row">
+						<div class="bulldogs">
+							<div class="col-md-12">
+								<div class="col-md-1"></div>
+								<div class="col-md-2">
+									<img src="img/icons/1.png">
+								</div>
+								<div class="col-md-2">
+									<img src="img/icons/2.png">
+								</div>
+								<div class="col-md-2">
+									<img src="img/icons/3.png">
+								</div>
+								<div class="col-md-2">
+									<img src="img/icons/4.png">
+								</div>
+								<div class="col-md-2">
+									<img src="img/icons/5.png">
+								</div>
+								<div class="col-md-1"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Info Block -->
+					<div class="row">
+						<div class="col-md-12">
+							<h4>Take it all with you</h4>
+							<p>Switch between devices, and pick up wherever you left off.</p>
+						</div>
+					</div>
+
+					<!-- Info Block -->
+					<div class="row">
+						<div class="dogs">
+							<div class="col-md-12">
+								<img src="img/BMcomp.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Left Side! -->
+
+				<!-- Start the Form -->
+				<div class="col-md-6">
+					<div class="well">
+						<form>
+							<fieldset>
+
+								<!-- First & Last Name -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label">First Name</label>
+												<input type="text" class="form-control" name="inputFName" required placeholder="First">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label">Last Name</label>
+												<input type="text" class="form-control" id="inputLName" required placeholder="Last">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Username Choice -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Choose your username</label>
+												<input type="text" class="form-control-matt" id="inputUsername" required placeholder="@gmail.com">
+												<a href="error.html">I prefer to use my current email address</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Password Choice -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Create a password</label>
+												<input type="password" required class="form-control" id="inputPassword">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Verify Password -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Confirm your password</label>
+												<input type="password" required class="form-control" id="inputConfirmPassword">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Birthday Selectors -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-5">
+											<div class="form-group">
+												<label class="control-label">Birthday</label>
+												<select class="form-control" id="inputMonth">
+													<option>Month</option>
+													<option>January</option>
+													<option>February</option>
+													<option>March</option>
+													<option>April</option>
+													<option>May</option>
+													<option>June</option>
+													<option>July</option>
+													<option>August</option>
+													<option>September</option>
+													<option>October</option>
+													<option>November</option>
+													<option>December</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="form-group">
+												<label class="control-label">Day</label>
+												<input type="number" required class="form-control" id="inputDay" placeholder="Day">
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group">
+												<label class="control-label">Year</label>
+												<input type="number" required class="form-control" id="inputYear" placeholder="Year">
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<!-- Gender Selectors -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Gender</label>
+												<select class="form-control" id="inputGender">
+													<option>I am...</option>
+													<option>Male</option>
+													<option>Female</option>
+													<option>Alien</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Phone Number -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Mobile Phone</label><br />
+												<input class="form-control" required id="mobile-number" type="tel">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Current Email -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Your current email address</label>
+												<input type="email" required class="form-control" id="inputCurrentEmail">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Location -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label class="control-label">Location</label>
+												<select class="form-control" id="inputLocation">
+													<option>United States</option>
+													<option>Canada</option>
+													<option>Mexico</option>
+													<option>Millennium Falcon</option>
+													<option>The Internet</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- The Small Text -->
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<div class="checkbox">
+													<label class="control-label"> 
+													<input type="checkbox" required id="inputCheck"> I agree to the Bluest Moon <a href="error.html">Terms of Service</a> and <a href="error.html">Privacy Policy</a>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Moving Right Along Then -->
+								<div class="col-md-12">
+									<input type="submit" class="btn btn-primary btn-block" value="Next Step" />
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					
+					<!-- More Small Print -->
+					<div class="col-md-12">
+						<p class="UMD"><a href="error.html">Learn more</a> about why we ask for this information.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script>
+		$("#mobile-number").intlTelInput({
+			//autoFormat: false,
+			//autoHideDialCode: false,
+			//defaultCountry: "jp",
+			//nationalMode: true,
+			//numberType: "MOBILE",
+			//onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+			//preferredCountries: ['cn', 'jp'],
+			//responsiveDropdown: true,
+			utilsScript: "lib/libphonenumber/build/utils.js"
+		});
+	</script>
+</body>
+</html>

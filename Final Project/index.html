@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="VWP Project Final Website">
+	<meta name="author" content="Matt Christians">
+
+	<title>IHL</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/minimit.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<!-- Team Dropdown Menu Script -->
+	<script>
+
+		$(document).ready(function(){
+			$(".dropdown").hover(            
+				function() {
+					$('.dropdown-menu', this).stop( true, false ).slideDown("fast");
+					$(this).toggleClass('open');        
+				},
+				function() {
+					$('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+					$(this).toggleClass('open');       
+				}
+				);
+		});
+
+	</script>
+
+	<!-- Begin Nav Container -->
+	<div class="navbar-wrapper">
+		<div class="container">
+
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container">
+
+					<!--header section -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Intergalactic Hockey League</a>
+					</div>
+
+					<!-- menu section -->
+					<div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-megadropdown-tabs">
+						<ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li class="dropdown mega-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Teams <span class="caret"></span></a>       
+                                <div class="dropdown-menu mega-dropdown-menu">
+                                    <div class="container">
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane active">
+                                                <ul class="nav-list list-inline">
+                                                    <li><a href="roster.html"><img src="img/nav/admirals.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/chiefs.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/emperors.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/force.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/raiders.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/rebels.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/tatooine.jpg"></a></li>
+                                                    <li><a href="roster.html"><img src="img/nav/wampas.jpg"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>                   
+                                </div>        
+                            </li>
+                            <li><a href="stats.aspx">Stats</a></li>
+                            <li><a href="project.aspx">Project Guidelines</a></li>
+                        </ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<!-- Carousel -->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Slide 1 -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="img/slide/slide1.jpg" alt="First slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Intergalactic Hockey League</h1>
+						<p>The Intergalactic Hockey League is an athletic league surround Star Wars, although this isn't fictional.  These teams do exist.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">About Us</a></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 2 -->
+			<div class="item">
+				<img src="img/slide/slide2.jpg" alt="Second slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Admirals Upset Wampas</h1>
+						<p>Lead by rookie Darth Maul, the Admirals upset the Wampas on Friday night by a score of 3-2 at the Millennium Falcon Ice Rink.</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Read More...</a></p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Slide 3 -->
+			<div class="item">
+				<img src="img/slide/slide3.jpg" alt="Third slide">
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Team Statistician Sign-In</h1>
+						<p>If you're a team team statistician or manager, sign up to enter your team's stats below!</p>
+						<p><a class="btn btn-lg btn-primary" href="#" role="button">Sign Up</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left and Right -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- League Standings Table -->
+	<div class="container table">
+		<div class="row row-centered">
+			<div class="col-xs-10 col-centered">
+				<h1>League Standings</h1>
+				<table id="table-pagination" data-toggle="table" data-pagination="true" class="table table-bordered">
+					<thead>
+						<tr class="table-head">
+							<th data-field="team" data-align="center" data-sortable="true">Team</th>
+							<th data-field="league" data-align="center" data-sortable="true">&nbsp;</th>
+							<th data-field="pos" data-align="center" data-sortable="true">Points</th>
+							<th data-field="gp" data-align="center" data-sortable="true">Games Played</th>
+							<th data-field="goals" data-align="center" data-sortable="true">Wins</th>
+							<th data-field="assists" data-align="center" data-sortable="true">Losses</th>
+							<th data-field="points" data-align="center" data-sortable="true">Ties</th>
+						</tr>
+					</thead>
+					<tbody class="table-body"><!-- {{ search.player }} -->
+						<tr>
+							<td><img src="img/table/admirals.jpg"></td>
+							<td>Mon Calamari Admirals</td>
+							<td>21</td>
+							<td>10</td>
+							<td>7</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/chiefs.jpg"></td>
+							<td>Forest Moon Chiefs</td>
+							<td>21</td>
+							<td>10</td>
+							<td>7</td>
+							<td>3</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/emperors.jpg"></td>
+							<td>Darkside Emperors</td>
+							<td>16</td>
+							<td>8</td>
+							<td>5</td>
+							<td>2</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/force.jpg"></td>
+							<td>Dagobah Swamp Force</td>
+							<td>14</td>
+							<td>8</td>
+							<td>4</td>
+							<td>3</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/raiders.jpg"></td>
+							<td>Tusken City Raiders</td>
+							<td>9</td>
+							<td>5</td>
+							<td>3</td>
+							<td>2</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/rebels.jpg"></td>
+							<td>Republic Rebels</td>
+							<td>7</td><td>6</td>
+							<td>2</td>
+							<td>3</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/tatooine.jpg"></td>
+							<td>Tatooine Sandcrawlers</td>
+							<td>5</td>
+							<td>8</td>
+							<td>1</td>
+							<td>6</td><td>1</td>
+						</tr>
+						<tr>
+							<td><img src="img/table/wampas.jpg"></td>
+							<td>Planet Hoth Wampas</td>
+							<td>0</td>
+							<td>7</td>
+							<td>0</td>
+							<td>7</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="container">
+		<div class="row row-centered">
+			<div class="col-xs-10 col-centered">
+
+				<!-- Footer -->
+				<footer>
+					<div class="row">
+						<div class="col-lg-12">
+							<p>&copy; Matt's Web Dev Work: <a href="http://bluestmoon.com/index.php?p=home">BluestMoon</a> | <a href="http://umdmis.com/">UMDMIS</a> | <a href="http://mdchristians.com/">MDChristians</a> | <a href="http://umdpenaltybox.com/">PenaltyBox</a> | <a href="http://www.carolslowcarb.com/">CarolsLowCarb</a> | <a href="http://www.umdbulldogcountry.com/">UMDBulldogCountry</a> | <a href="https://secret-castle-6370.herokuapp.com/">JobApp</a></p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap core JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
